@@ -11,7 +11,6 @@ int multipliersSum1(int a, int b, int number) {
 		}
 	}
 	return sum;
-
 }
 
 int multiplierSum2(int a, int b, int number) {
