@@ -41,9 +41,7 @@ int main() {
 		primeNumbers.pop();
 	}
 
-
-	std::cout << "largest prime factor of the number is : " << primeNumbers.top();
-
+	std::cout << "largest prime factor of the number is : " << primeNumbers.top() << std::endl;
 
 	system("pause");
 	return 0;
