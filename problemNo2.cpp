@@ -1,7 +1,6 @@
 #include <iostream>
 #include <time.h>
 
-
 int fibonnaci(int n) {
 
 	if (n == 1)return 1;
@@ -12,7 +11,6 @@ int fibonnaci(int n) {
 		return fibonnaci(n-2) + fibonnaci(n - 1);
 	}
 }
-
 
 int main() {
 
