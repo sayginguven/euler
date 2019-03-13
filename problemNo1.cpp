@@ -2,7 +2,6 @@
 #include <time.h>
 
 int multipliersSum1(int a, int b, int number) {
-
 	int sum{ 0 };
 	for (size_t i = 0; i < number; i++)
 	{
@@ -14,7 +13,6 @@ int multipliersSum1(int a, int b, int number) {
 }
 
 int multiplierSum2(int a, int b, int number) {
-
 	int sum{ 0 };
 	for (size_t i = 0; i < number; i += a)
 	{
@@ -27,7 +25,6 @@ int multiplierSum2(int a, int b, int number) {
 		sum += i;
 	}
 	return sum;
-
 }
 
 int main() {
