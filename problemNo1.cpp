@@ -17,7 +17,7 @@ int multipliersSum1(int a, int b, int number) {
 int multiplierSum2(int a, int b, int number) {
 
 	int sum{ 0 };
-	for (size_t i = 0; i < number; i+=a)
+	for (size_t i = 0; i < number; i += a)
 	{
 		if (i % b != 0) {
 			sum += i;
@@ -44,8 +44,8 @@ int main() {
 	std::cout << multiplierSum2(3, 5, 1000) << std::endl;
 	end = clock();
 	std::cout << "multipliersSum2 takes "
-			  << (end - start) / CLOCKS_PER_SEC << "seconds."
-              << std::endl;
+		<< (end - start) / CLOCKS_PER_SEC << "seconds."
+		<< std::endl;
 
 
 	system("pause");
