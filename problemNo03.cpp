@@ -26,13 +26,21 @@ bool isPrime(int n) {
 	}
 }
 
-int main() {
-	long long number = 600851475143;
+long long factorization(long long number) {
+	for (size_t i = 2; i < number; i++){
+		if (number%i == 0)
+			number /= i;
+	}
+	return number;
+}
+
+int factorOfNumber(long long number)
+{
 	std::stack<int> primeNumbers;
 
 	for (size_t i = 2; i < (sqrt(number)+1); i+=1 )
 	{
-		if (isPrime(i)) {
+		if (isPrime(i)){
 			primeNumbers.push(i);
 		}
 	}
@@ -41,7 +49,18 @@ int main() {
 		primeNumbers.pop();
 	}
 
-	std::cout << "largest prime factor of the number is : " << primeNumbers.top() << std::endl;
+	return primeNumbers.top();
+}
+int main() {
+	long long number = 600851475143;//factorization
+		
+	int result1 = factorization(number);
+
+	int result2 = factorOfNumber(number);
+
+	std::cout << "largest prime factor of the number is : " << result1 << std::endl;
+
+	std::cout << "largest prime factor of the number is : " << result2 << std::endl;
 
 	system("pause");
 	return 0;
