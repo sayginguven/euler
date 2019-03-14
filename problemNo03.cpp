@@ -3,7 +3,6 @@
 //What is the largest prime factor of the number 600851475143 ?
 
 #include <iostream>
-#include <time.h>
 #include <stack>
 
 bool isPrime(int n) {
